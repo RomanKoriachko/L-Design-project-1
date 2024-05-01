@@ -1,6 +1,9 @@
-fsLightboxInstances['first-lightbox'].props.onOpen = function () {
-	console.log('The first lightbox has opened.');
-};
-fsLightboxInstances['second-lightbox'].props.onOpen = function () {
-	console.log('The second lightbox has opened.');
-};
+const cooperationBtn = document.querySelector('.project-btn-wrapper');
+const contactsSection = document.querySelector('.contacts-section');
+
+cooperationBtn.addEventListener('click', function () {
+	window.scrollTo({
+		top: contactsSection.getBoundingClientRect().top + window.scrollY,
+		behavior: 'smooth',
+	});
+});
