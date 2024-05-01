@@ -3,6 +3,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #f9fbf3;
+	color: #374836;
 }
 
 .container {
@@ -42,6 +43,81 @@ body {
 			.header-menu-item {
 				cursor: pointer;
 			}
+		}
+	}
+}
+
+.main {
+	.project-section {
+		margin-top: 106px;
+		padding-bottom: 80px;
+		.project-title-link {
+			text-transform: uppercase;
+			font-weight: 300;
+			line-height: 26px;
+			color: #374836;
+		}
+		.project-title {
+			font-size: 80px;
+			font-weight: 600;
+			line-height: 88px;
+			text-transform: uppercase;
+			margin-bottom: 24px;
+		}
+		.project-subtitle {
+			font-weight: 300;
+			line-height: 26px;
+			margin-bottom: 80px;
+		}
+		.project-images-wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 350px 350px;
+			gap: 24px;
+			margin-bottom: 14px;
+			.img-wrapper {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+				> img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.project-img-link-1 {
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+		}
+		.project-images-wrapper-reverse {
+			.project-img-link-1 {
+				grid-row-start: 1;
+				grid-row-end: 2;
+			}
+			.project-img-link-3 {
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+		}
+		.project-btn-wrapper {
+			text-align: center;
+			margin-top: 32px;
+		}
+		.projects-btn {
+			border: none;
+			background-color: #242924;
+			color: #ffffff;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			line-height: 24px;
+			text-transform: capitalize;
+			padding: 10px 40px;
+			cursor: pointer;
 		}
 	}
 }
